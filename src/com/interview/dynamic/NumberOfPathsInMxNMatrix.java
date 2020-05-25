@@ -6,7 +6,7 @@ package com.interview.dynamic;
 public class NumberOfPathsInMxNMatrix {
 
     public int countPathsRecursive(int n, int m){
-        if(n == 1 || m == 1){
+        if(n == 0 || m == 0){
             return 1;
         }
         return countPathsRecursive(n-1, m) + countPathsRecursive(n, m-1);
